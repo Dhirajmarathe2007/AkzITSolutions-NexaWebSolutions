@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact NexaWeb Solutions — tell us about your project and let's build something remarkable together." />
+  <title>Contact — NexaWeb Solutions</title>
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'><rect width='36' height='36' rx='8' fill='%230D1B2A'/><text x='50%' y='54%' dominant-baseline='middle' text-anchor='middle' font-family='serif' font-size='20' fill='white'>N</text></svg>" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body data-page="contact">
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ── Navbar ─────────────────────────────────────────── -->
+  <header class="navbar" role="banner">
+    <div class="navbar__inner">
+      <a class="navbar__logo" href="index.html" aria-label="NexaWeb Solutions — Home">
+        <div class="navbar__logo-mark" aria-hidden="true"></div>
+        <span class="navbar__logo-text">NexaWeb</span>
+      </a>
+
+      <nav class="navbar__nav" aria-label="Primary navigation">
+        <a class="navbar__link" href="index.html">Home</a>
+        <a class="navbar__link" href="about.html">About</a>
+        <a class="navbar__link" href="services.html">Services</a>
+        <a class="navbar__link" href="contact.html">Contact</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <a class="btn btn-primary btn-sm" href="contact.html">Start a Project</a>
+        <button
+          class="navbar__hamburger"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── Mobile Menu ────────────────────────────────────── -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu" hidden>
+    <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+      <a class="mobile-menu__link" href="index.html">Home</a>
+      <a class="mobile-menu__link" href="about.html">About</a>
+      <a class="mobile-menu__link" href="services.html">Services</a>
+      <a class="mobile-menu__link" href="contact.html">Contact</a>
+    </nav>
+    <div>
+      <a class="btn btn-primary" href="contact.html">Start a Project</a>
+    </div>
+    <button class="mobile-menu__close btn btn-ghost btn-sm" aria-label="Close navigation menu" style="margin-top:auto; align-self:flex-start;">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      Close
+    </button>
+  </div>
+
+  <!-- ── Main Content ───────────────────────────────────── -->
+  <main id="main-content">
+
+    <!-- ── Contact Hero ──────────────────────────────────── -->
+    <section class="contact-hero section" aria-labelledby="contact-hero-heading">
+      <div class="container">
+        <span class="section-label reveal" aria-hidden="true">Let's Talk</span>
+        <h1 id="contact-hero-heading" class="reveal reveal-delay-1">
+          Start your next <em class="heading-highlight">project</em>
+        </h1>
+        <p class="page-hero__sub reveal reveal-delay-2">
+          Tell us what you're building and we'll get back to you within one business day with our honest assessment and recommended approach.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── Contact Layout ────────────────────────────────── -->
+    <section class="section" style="padding-top: 0;" aria-label="Contact form and information">
+      <div class="container">
+        <div class="contact__layout">
+
+          <!-- ── Form Column ──────────────────────────────── -->
+          <div class="reveal-left">
+            <div class="contact__form-wrap">
+              <h2 class="contact__form-title">Send us a message</h2>
+              <p class="contact__form-sub">All fields marked with <span style="color: var(--clr-accent);">*</span> are required. We read every message personally.</p>
+
+              <form id="contactForm" novalidate aria-label="Contact form">
+                <div class="contact__form-body">
+
+                  <div class="form__row">
+                    <div class="form__group">
+                      <label class="form__label" for="name">
+                        Full Name <span aria-hidden="true">*</span>
+                      </label>
+                      <input
+                        class="form__input"
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Jane Smith"
+                        autocomplete="name"
+                        aria-required="true"
+                        aria-describedby="name-error"
+                      />
+                      <span class="form__error" id="name-error" role="alert"></span>
+                    </div>
+
+                    <div class="form__group">
+                      <label class="form__label" for="email">
+                        Email Address <span aria-hidden="true">*</span>
+                      </label>
+                      <input
+                        class="form__input"
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="jane@company.com"
+                        autocomplete="email"
+                        aria-required="true"
+                        aria-describedby="email-error"
+                      />
+                      <span class="form__error" id="email-error" role="alert"></span>
+                    </div>
+                  </div>
+
+                  <div class="form__row">
+                    <div class="form__group">
+                      <label class="form__label" for="company">Company</label>
+                      <input
+                        class="form__input"
+                        type="text"
+                        id="company"
+                        name="company"
+                        placeholder="Acme Inc."
+                        autocomplete="organization"
+                      />
+                    </div>
+
+                    <div class="form__group">
+                      <label class="form__label" for="service">
+                        Service Interested In <span aria-hidden="true">*</span>
+                      </label>
+                      <select
+                        class="form__select"
+                        id="service"
+                        name="service"
+                        aria-required="true"
+                        aria-describedby="service-error"
+                      >
+                        <option value="" disabled selected>Select a service…</option>
+                        <option value="web-design">Web Design &amp; UX</option>
+                        <option value="web-development">Web Development</option>
+                        <option value="brand-identity">Brand Identity</option>
+                        <option value="seo-performance">SEO &amp; Performance</option>
+                        <option value="ecommerce">E-Commerce</option>
+                        <option value="retainer">Ongoing Retainer</option>
+                        <option value="other">Other / Not Sure</option>
+                      </select>
+                      <span class="form__error" id="service-error" role="alert"></span>
+                    </div>
+                  </div>
+
+                  <div class="form__group">
+                    <label class="form__label" for="budget">Approximate Budget</label>
+                    <select class="form__select" id="budget" name="budget">
+                      <option value="" disabled selected>Select a budget range…</option>
+                      <option value="under-10k">Under $10,000</option>
+                      <option value="10k-25k">$10,000 – $25,000</option>
+                      <option value="25k-50k">$25,000 – $50,000</option>
+                      <option value="50k-100k">$50,000 – $100,000</option>
+                      <option value="100k-plus">$100,000+</option>
+                    </select>
+                  </div>
+
+                  <div class="form__group">
+                    <label class="form__label" for="message">
+                      Project Details <span aria-hidden="true">*</span>
+                    </label>
+                    <textarea
+                      class="form__textarea"
+                      id="message"
+                      name="message"
+                      placeholder="Tell us about your project — what you're building, your goals, timeline, and any other context that would help us understand what you need…"
+                      rows="6"
+                      aria-required="true"
+                      aria-describedby="message-error"
+                    ></textarea>
+                    <span class="form__error" id="message-error" role="alert"></span>
+                  </div>
+
+                  <div class="form__submit-row">
+                    <p class="form__privacy">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" style="display:inline; vertical-align:middle; margin-right:4px;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                      Your data is kept private and never shared.
+                    </p>
+                    <button class="btn btn-accent btn-lg" type="submit" aria-label="Send message">
+                      Send Message
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                    </button>
+                  </div>
+
+                </div><!-- /.contact__form-body -->
+
+                <!-- Success State -->
+                <div class="form__success" role="alert" aria-live="polite">
+                  <div class="form__success-icon" aria-hidden="true">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  </div>
+                  <h3>Message sent!</h3>
+                  <p>Thank you for reaching out. A member of our team will be in touch within one business day.</p>
+                </div>
+
+              </form>
+            </div>
+          </div>
+
+          <!-- ── Info Column ──────────────────────────────── -->
+          <div class="contact__info reveal-right">
+
+            <!-- What to Expect -->
+            <div class="contact__expect">
+              <h3>What to expect</h3>
+              <ul class="contact__expect-list" role="list">
+
+                <li class="contact__expect-item">
+                  <div class="contact__expect-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  </div>
+                  <div>
+                    <p class="contact__expect-label">Response within 24 hours</p>
+                    <p class="contact__expect-desc">We read and reply to every enquiry personally — no bots, no auto-responders.</p>
+                  </div>
+                </li>
+
+                <li class="contact__expect-item">
+                  <div class="contact__expect-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  </div>
+                  <div>
+                    <p class="contact__expect-label">A dedicated point of contact</p>
+                    <p class="contact__expect-desc">You'll speak directly with a senior team member, not a sales rep.</p>
+                  </div>
+                </li>
+
+                <li class="contact__expect-item">
+                  <div class="contact__expect-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                  </div>
+                  <div>
+                    <p class="contact__expect-label">A clear, honest proposal</p>
+                    <p class="contact__expect-desc">Fixed price, clear scope, and a realistic timeline — no vague retainers or hidden fees.</p>
+                  </div>
+                </li>
+
+                <li class="contact__expect-item">
+                  <div class="contact__expect-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                  </div>
+                  <div>
+                    <p class="contact__expect-label">No obligation</p>
+                    <p class="contact__expect-desc">Our discovery call is free and there's absolutely no pressure to proceed.</p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+            <!-- Contact Details -->
+            <div class="contact__details">
+              <h4>Contact details</h4>
+
+              <div class="contact__detail-item">
+                <div class="contact__detail-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <p class="contact__detail-label">Email</p>
+                  <a class="contact__detail-value" href="mailto:dhirajmarathe2007@gmail.com">dhirajmarathe2007@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact__detail-item">
+                <div class="contact__detail-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.92a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.72 16.92z"/></svg>
+                </div>
+                <div>
+                  <p class="contact__detail-label">Phone</p>
+                  <a class="contact__detail-value" href="tel:+91 8010144606">+91 8010144606</a>
+                </div>
+              </div>
+
+              <div class="contact__detail-item">
+                <div class="contact__detail-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <p class="contact__detail-label">New York (HQ)</p>
+                  <p class="contact__detail-value">123 Design Street, NY 10001</p>
+                </div>
+              </div>
+
+              <div class="contact__detail-item">
+                <div class="contact__detail-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <p class="contact__detail-label">London</p>
+                  <p class="contact__detail-value">14 Clerkenwell Road, EC1M 5RF</p>
+                </div>
+              </div>
+
+              <div class="contact__detail-item">
+                <div class="contact__detail-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <p class="contact__detail-label">Sydney</p>
+                  <p class="contact__detail-value">88 George Street, NSW 2000</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Direct CTA -->
+            <div class="contact__direct">
+              <h4>Prefer to talk?</h4>
+              <p>Book a free 30-minute discovery call directly in our calendar — no forms required.</p>
+              <a class="btn btn-white btn-lg" href="tel:+91 8010144606">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.92a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.72 16.92z"/></svg>
+                Call Us Now
+              </a>
+            </div>
+
+          </div><!-- /.contact__info -->
+
+        </div><!-- /.contact__layout -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ────────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <a class="footer__logo" href="index.html" aria-label="NexaWeb Solutions — Home">
+            <div class="footer__logo-mark" aria-hidden="true"></div>
+            <span class="footer__logo-text">NexaWeb</span>
+          </a>
+          <p class="footer__tagline">Premium web design and development for brands that demand excellence.</p>
+          <nav class="footer__social" aria-label="Social media links">
+            <a class="footer__social-link" href="#" aria-label="Follow us on LinkedIn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a class="footer__social-link" href="#" aria-label="Follow us on Twitter / X">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+            <a class="footer__social-link" href="#" aria-label="View our work on Dribbble">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg>
+            </a>
+          </nav>
+        </div>
+
+        <nav aria-label="Services links">
+          <h3 class="footer__col-title">Services</h3>
+          <ul class="footer__links">
+            <li><a class="footer__link" href="services.html">Web Design</a></li>
+            <li><a class="footer__link" href="services.html">Web Development</a></li>
+            <li><a class="footer__link" href="services.html">Brand Identity</a></li>
+            <li><a class="footer__link" href="services.html">SEO &amp; Performance</a></li>
+            <li><a class="footer__link" href="services.html">E-Commerce</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Company links">
+          <h3 class="footer__col-title">Company</h3>
+          <ul class="footer__links">
+            <li><a class="footer__link" href="about.html">About Us</a></li>
+            <li><a class="footer__link" href="about.html#team">Our Team</a></li>
+            <li><a class="footer__link" href="about.html#story">Our Story</a></li>
+            <li><a class="footer__link" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h3 class="footer__col-title">Get In Touch</h3>
+          <div>
+            <div class="footer__contact-item">
+              <svg class="footer__contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span class="footer__contact-text">dhirajmarathe2007@gmail.com</span>
+            </div>
+            <div class="footer__contact-item">
+              <svg class="footer__contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.92a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.72 16.92z"/></svg>
+              <span class="footer__contact-text">+91 8010144606</span>
+            </div>
+            <div class="footer__contact-item">
+              <svg class="footer__contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span class="footer__contact-text">123 Design Street<br>New York, NY 10001</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2025 NexaWeb Solutions. All rights reserved.</p>
+        <nav class="footer__legal" aria-label="Legal links">
+          <a class="footer__legal-link" href="#">Privacy Policy</a>
+          <a class="footer__legal-link" href="#">Terms of Service</a>
+          <a class="footer__legal-link" href="#">Cookie Policy</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+
+</body>
+</html>
