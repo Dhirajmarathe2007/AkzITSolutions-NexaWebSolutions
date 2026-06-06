@@ -2,6 +2,11 @@
 
 A premium responsive business website developed as part of the Akz IT Solutions Frontend Development Internship Program.
 
+## 🔗 Live Demo
+
+Website: https://dhirajmarathe2007.github.io/AkzITSolutions-NexaWebSolutions/
+
+Repository: https://github.com/Dhirajmarathe2007/AkzITSolutions-NexaWebSolutions
 ## Features
 
 - Responsive design
